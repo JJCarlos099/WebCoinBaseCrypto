@@ -1,0 +1,66 @@
+$color-main: #0075FF;
+$color-textAux: #FFF;
+$color-text: #000;
+
+//Botons
+@mixin btn-base {
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.25rem;
+}
+@mixin btn-sm-modify {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+.btn-main{
+    @include btn-base();
+    background-color: $color-main;
+    color: $color-textAux;
+    border: solid 1px $color-main; 
+    
+
+    &:hover{
+        background-color: $color-textAux;
+        color: $color-main;
+    }
+
+    &-sm{
+        @extend .btn-main;
+        @include btn-sm-modify();
+    }
+}
+.btn-sec{
+    @include btn-base();
+    color: $color-text;
+    background-color: transparent;
+    border: none;
+
+    &:hover{
+        color: #777;
+    }
+
+    &-sm{
+        @extend .btn-sec;
+        @include btn-sm-modify();
+    }
+
+}
+
+//Menu
+.main-menu{
+    li{
+        list-style: none;
+        display: inline;
+        font-size: 0.6rem;
+    }
+}
+
+//Icon-sm
+.icon-sm {
+    i{
+        font-size: 0.75rem;
+        padding: 0.1rem .25rem;
+        color: $color-main;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #00000040;
+    }
+}
