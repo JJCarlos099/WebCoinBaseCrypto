@@ -1,4 +1,6 @@
-*{
+@use "components";
+
+body{
     margin: 0;
     padding: 0;
 }
@@ -14,4 +16,40 @@
 
 .logo img{
     max-width: 7rem;
+}
+
+.sec-home{
+    display: flex;
+    align-items: center;
+    max-width: 768px;
+    margin: auto;
+    width: 100%;
+    padding: 4rem 0rem;
+    .home-cta{
+        flex: 1;
+        .cta-text{
+            color: components.$color-main;
+            font-weight: 500;
+        }
+        i{
+            color: components.$color-main;
+            font-weight:bolder;
+        }
+        .home-title{
+            width: 25rem;
+            font-size: 4rem;
+        }
+        .home-description{
+            margin-top: .75rem;
+            width: 25rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .lead-magnet{
+            margin-top: 1rem;
+        }
+
+    }
+
+
 }
