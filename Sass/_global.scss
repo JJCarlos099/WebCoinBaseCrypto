@@ -115,3 +115,23 @@ body{
         }
     }
 }
+
+.sec-kpis{
+    margin: 0;
+    width: 100%;
+    background-color: components.$color-main;
+    color: components.$color-textAux;
+    padding: 2rem;
+    .kpi{
+        text-align: center;
+        h4{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: .8rem;
+            font-weight: 400;
+            color: rgba($color: components.$color-textAux , $alpha: .9);
+        }
+    }
+}

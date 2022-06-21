@@ -207,4 +207,24 @@ body {
   height: 100%;
 }
 
+.sec-kpis {
+  margin: 0;
+  width: 100%;
+  background-color: #0075FF;
+  color: #FFF;
+  padding: 2rem;
+}
+.sec-kpis .kpi {
+  text-align: center;
+}
+.sec-kpis .kpi h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /*# sourceMappingURL=style.css.map */
