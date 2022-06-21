@@ -97,3 +97,21 @@ body{
         }
     }
 }
+
+.sec-benefits{
+    border-top: 1.5px solid #ddd;
+    @extend .sec-features, .intro;
+
+    .intro{
+        margin-bottom: 4rem;
+    }
+    .benefit-cards{
+        .benefit{
+            .cta{
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+            }
+        }
+    }
+}

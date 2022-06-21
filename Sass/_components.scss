@@ -75,27 +75,31 @@ $color-text: #000;
     }
 }
 
-//Feature
-.feature{
+//Benefit
+.benefit{
     display: flex;
     flex-direction: column;
     .icon{
         color: $color-main;
-        font-size: 9rem;
+        font-size: 4.75rem;
         text-align: center;
     }
     .description{
+        height: inherit;
         .title{
-            font-size: 2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
             text-align: center;
         }
         .text{
+            font-size: .8rem;
             color: rgba($color: $color-text , $alpha: .5);
             font-weight: 600;
             text-align: center;
         }
     }
     .cta{
+        font-size: .8rem;
         margin-top: 3rem;
         color: $color-main;
         font-weight: 600;
