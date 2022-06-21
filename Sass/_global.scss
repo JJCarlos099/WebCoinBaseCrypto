@@ -99,8 +99,13 @@ body{
 }
 
 .sec-benefits{
+    @include section-display();
     border-top: 1.5px solid #ddd;
-    @extend .sec-features, .intro;
+    margin-bottom: 4rem;
+    .intro{
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
 
     .intro{
         margin-bottom: 4rem;
@@ -133,5 +138,25 @@ body{
             font-weight: 400;
             color: rgba($color: components.$color-textAux , $alpha: .9);
         }
+    }
+}
+
+.sec-onboarding{
+    @include section-display();
+    .intro{
+        @extend .sec-features, .intro;
+        text-align: center;
+    }
+    .icon-desc{
+        margin: 0 .5rem;
+    }
+    .steps{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step-separator{
+        flex: 1;
+        border-top: 2px solid #ddd;
     }
 }
