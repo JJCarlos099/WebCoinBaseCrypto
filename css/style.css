@@ -33,7 +33,7 @@
   margin-bottom: 0;
 }
 .main-menu li {
-  margin-left: 2rem;
+  margin-right: 2rem;
   list-style: none;
   display: inline;
   font-size: 1rem;
@@ -47,8 +47,8 @@
 }
 
 .icon-sm i {
-  font-size: 0.75rem;
-  padding: 0.1rem 0.25rem;
+  font-size: 1.1rem;
+  padding: 0.35rem 0.5rem;
   color: #0075FF;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
@@ -120,7 +120,7 @@ body {
   max-width: 768px;
   margin: auto;
   width: 100%;
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
 }
 .sec-home .home-cta {
   flex: 1;
@@ -145,6 +145,48 @@ body {
 }
 .sec-home .home-cta .lead-magnet {
   margin-top: 1rem;
+}
+
+.sec-features {
+  max-width: 768px;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+.sec-features .features {
+  display: flex;
+}
+.sec-features .features .text {
+  padding: 2rem 0;
+  max-width: 45%;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feature .description {
+  margin-left: 1rem;
+}
+.sec-features .features .text .feature .description .title {
+  text-align: left;
+  font-size: 1.1rem;
+}
+.sec-features .features .text .feature .description .text-description {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
