@@ -1,10 +1,14 @@
 @use "components";
 
 @mixin section-display {
-    max-width: 768px;
+    max-width: 998px;
     margin: auto;
     width: 100%;
-    padding: 2rem 0rem;
+    padding: 2rem 3rem;
+}
+
+html{
+    min-width: 100vw;
 }
 
 body{
@@ -40,12 +44,12 @@ body{
             font-weight:bolder;
         }
         .home-title{
-            width: 25rem;
+            width: 18rem;
             font-size: 4rem;
         }
         .home-description{
             margin-top: .75rem;
-            width: 25rem;
+            width: 18rem;
             font-weight: 600;
             font-size: 1rem;
         }
@@ -76,7 +80,7 @@ body{
         display: flex;
         .text{
             padding: 2rem 0;
-            max-width: 45%;
+            max-width: 100%;
             .feature{
                 display: flex;
                 flex-direction: row;
@@ -179,6 +183,32 @@ body{
             font-size: 0.9rem;
             font-weight: 400;
             color: rgba($color: components.$color-text, $alpha: .8);
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .sec-onboarding{
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .sec-footer-cta{
+        text-align: center;
+        background-image: none;
+        padding: 1rem;;
+        .footer-cta{
+            width: 100%;
+            padding: 0;
+            .cta-description{
+                width: 100%;
+            }
         }
     }
 }
