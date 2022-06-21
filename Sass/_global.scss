@@ -160,3 +160,25 @@ body{
         border-top: 2px solid #ddd;
     }
 }
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 3.75rem 0 3.75rem 8rem;
+    background-image: url(../assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: right;
+    .footer-cta{
+        width: 50%;
+        padding-right: 2rem;
+        .cta-title{
+            font-size: 2.25rem;
+        }
+        .cta-description{
+            width: 85%;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba($color: components.$color-text, $alpha: .8);
+        }
+    }
+}
